@@ -29,23 +29,23 @@ public class Ejemplo0811 {
          tabla = entrada.nextInt();
         // 
         String mensajeSuma= "";
-        String mensajeSumaDos= "";
+       
         
         switch (opcion){
             case 1:
                 mensajeSuma = obtenerTablaSumar(limite, tabla);
                 break;
             case 2:
-                mensajeSumaDos = obtenerTablaMultiplicar(limite, tabla);
+                mensajeSuma = obtenerTablaMultiplicar(limite, tabla);
                 break;
         
         }
         
-        
+        6
        
         
         System.out.printf("%s\n", mensajeSuma);
-        System.out.printf("%s\n", mensajeSumaDos);
+
     }
         
     public static String obtenerTablaSumar(int limite, int tabla){
