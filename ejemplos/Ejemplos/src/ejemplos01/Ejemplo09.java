@@ -17,37 +17,54 @@ public class Ejemplo09 {
         String mensajeSumaDos;
         String mensajeSumaTres;
         mensajeSuma = obtenerSuma(10, 9);
+        int[] arreglo = {10, 2, 5, 3};
+        String mensajeSumaTres = repetirNombre("Jose Gavica", arreglo);
         mensajeSumaDos = obtenerSuma(10);
-        mensajeSumaTres = obtenerSuma(10 , 9, 8);
+        mensajeSumaTres = obtenerSuma(10, 9, 8);
         System.out.printf("%s\n", mensajeSuma);
         System.out.printf("%s\n", mensajeSumaDos);
         System.out.printf("%s\n", mensajeSumaTres);
     }
-        
-    public static String obtenerSuma(int operandor1, int operandor2){
+
+    public static String obtenerSuma(int operandor1, int operandor2) {
         int suma;
         String cadena = "";
         suma = operandor1 + operandor2;
         cadena = String.format("%s%d\n", cadena, suma);
-        return cadena;        
+        return cadena;
     }
-    
-    public static String obtenerSuma(int operandor1){
+
+    public static String obtenerSuma(int operandor1) {
         int suma;
         String cadena = "";
         suma = operandor1 + operandor1;
         cadena = String.format("%s%d\n", cadena, suma);
-        return cadena;        
-        
+        return cadena;
+
     }
-    
-    public static String obtenerSuma(int operandor1, int operador2, int operador3){
+
+    public static String obtenerSuma(int operandor1, int operador2, int operador3) {
         int suma;
         String cadena = "";
         suma = operandor1 + operandor1 + operador2;
         cadena = String.format("%s%d\n", cadena, suma);
-        return cadena;        
+        return cadena;   
         
     }
-    
+
+    public static String repetirNombre(String nombre, int [] arreglo2) {
+        int suma = 0;
+        String cadena = "";
+        for (int i = 0; i < arreglo2.length; i++) {
+            suma = suma + arreglo2[i];
+        }
+
+        for (int i = 1; i < suma; i++) {
+            cadena = String.format("%s%s\n", cadena, nombre);
+        }
+
+        return cadena;
+
+    }
+
 }
